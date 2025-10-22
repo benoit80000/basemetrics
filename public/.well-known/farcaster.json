@@ -1,6 +1,28 @@
 {
-  "accountAssociation": { ... },
-  "miniapp": { ... },
+  "accountAssociation": {
+    "header": "REPLACE_WITH_HEADER",
+    "payload": "REPLACE_WITH_PAYLOAD",
+    "signature": "REPLACE_WITH_SIGNATURE"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Base Metrics",
+    "subtitle": "Live on-chain insights for Base & OP Stack",
+    "description": "Analytics dashboard showing Base & OP Stack transactions and EVM TVL (Top 10).",
+    "homeUrl": "https://basemetrics.vercel.app/",
+    "iconUrl": "https://basemetrics.vercel.app/icon.png",
+    "splashImageUrl": "https://basemetrics.vercel.app/splash.png",
+    "splashBackgroundColor": "#0B0E14",
+    "heroImageUrl": "https://basemetrics.vercel.app/hero.png",
+    "screenshotUrls": [
+      "https://basemetrics.vercel.app/hero.png"
+    ],
+    "primaryCategory": "utility",
+    "tags": ["analytics", "dashboard", "blockchain"],
+    "ogTitle": "Base Metrics",
+    "ogDescription": "On-chain analytics for Base and OP Stack.",
+    "ogImageUrl": "https://basemetrics.vercel.app/api/og"
+  },
   "baseBuilder": {
     "ownerAddress": "0x603E8F80872E35e7ACBeE879aa79a5b51073AC75"
   }
