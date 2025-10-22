@@ -3,13 +3,12 @@
     "header": "eyJmaWQiOjM2ODA3OCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGM2MDQ5Qzk1ZmEwQzQ2ZDViMGU3YjE3MWMzZTQwNmJBQjdCZmQ2ZjcifQ",
     "payload": "eyJkb21haW4iOiJiYXNlbWV0cmljcy52ZXJjZWwuYXBwIn0",
     "signature": "7Ol2EkPbtXr1UyVJJuNTj7z0SQITV0eyuwHRXGObWD4SP6/E1ijcPQSwcMmfAsXxtRSUs2CwqSkGwNnGGB1aZRw="
-  }
-,
+  },
   "miniapp": {
     "version": "1",
     "name": "Base Metrics",
-    "subtitle": "Live on-chain insights for Base & OP Stack",
-    "description": "Analytics dashboard showing Base & OP Stack transactions and EVM TVL (Top 10).",
+    "subtitle": "Base and OP onchain metrics",
+    "description": "Analytics dashboard with Base and OP Stack transactions and EVM TVL (Top 10).",
     "homeUrl": "https://basemetrics.vercel.app/",
     "iconUrl": "https://basemetrics.vercel.app/icon.png",
     "splashImageUrl": "https://basemetrics.vercel.app/splash.png",
@@ -21,7 +20,7 @@
     "primaryCategory": "utility",
     "tags": ["analytics", "dashboard", "blockchain"],
     "ogTitle": "Base Metrics",
-    "ogDescription": "On-chain analytics for Base and OP Stack.",
+    "ogDescription": "Onchain analytics for Base and OP Stack.",
     "ogImageUrl": "https://basemetrics.vercel.app/api/og"
   },
   "baseBuilder": {
