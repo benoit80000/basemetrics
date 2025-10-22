@@ -1,0 +1,1 @@
+export async function POST(){ const to='0x0000000000000000000000000000000000000000'; const valueWei='0x16345785D8A0000'; const payload={ chainId:'eip155:8453', method:'eth_sendTransaction', params:[{to, value:valueWei, data:'0x'}] }; return new Response(JSON.stringify(payload),{headers:{'content-type':'application/json'}}); }

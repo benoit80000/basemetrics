@@ -1,0 +1,4 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{color-scheme:dark}body{@apply bg-[#0B0E14] text-slate-100 font-sans}

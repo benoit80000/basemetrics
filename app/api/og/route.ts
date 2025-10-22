@@ -1,0 +1,3 @@
+import { ImageResponse } from '@vercel/og';
+export const runtime='edge';
+export async function GET(){ const w=1200,h=630; return new ImageResponse((<div style={{width:w,height:h,display:'flex',flexDirection:'column',background:'#0B0E14',color:'#fff',padding:48}}><div style={{fontSize:26,opacity:.8}}>Base / OP Stack</div><div style={{fontSize:56,fontWeight:800,marginTop:6}}>Analytics Mini‑App</div><div style={{display:'flex',gap:14,marginTop:24}}><div style={{width:160,height:8,background:'#0052FF',borderRadius:8}}/><div style={{width:120,height:8,background:'#FF0420',borderRadius:8}}/></div><div style={{marginTop:'auto',fontSize:20,opacity:.75}}>Live metrics • Base & OP Stack • EVM TVL (Top 10)</div></div>),{width:w,height:h}); }

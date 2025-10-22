@@ -1,0 +1,6 @@
+import { NextResponse } from 'next/server';
+
+type Stats = { total_transactions?: string | number };
+const TIMEOUT = 8000;
+async function fetchJSON(url: string){ const c=new AbortController(); const id=setTimeout(()=>c.abort(), TIMEOUT); try{ const r=await fetch(url,{cache:'no-store', signal:c.signal}); if(!r.ok) throw new Error('HTTP '+r.status); return await r.json(); } finally { clearTimeout(id) } }
+export async function GET(){ const baseStats=await fetchJSON('https://base.blockscout.com/api/v2/stats') as Stats; const opChains=[{name:'OP Mainnet', statsUrl:'https://explorer.optimism.io/api/v2/stats'},{name:'Base', statsUrl:'https://base.blockscout.com/api/v2/stats'}]; let opstackTotal=0; const perChain:any[]=[]; for(const c of opChains){ try{ const d=await fetchJSON(c.statsUrl) as Stats; const val=Number(d.total_transactions ?? 0); if(!Number.isFinite(val)) throw new Error('no total_transactions'); opstackTotal+=val; perChain.push({name:c.name,total:val}); } catch { perChain.push({name:c.name,total:null}); } } const baseTotal=Number((baseStats as any).total_transactions ?? 0); const ratio= opstackTotal>0 ? baseTotal/opstackTotal : null; return NextResponse.json({ base:{ total_transactions: baseTotal, raw: baseStats }, opstack:{ total_transactions_sum: opstackTotal, per_chain: perChain }, ratios:{ base_vs_opstack: ratio } }); }
