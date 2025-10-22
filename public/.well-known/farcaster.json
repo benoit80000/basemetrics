@@ -1,15 +1,6 @@
 {
-  "accountAssociation": {
-    "header": "REPLACE_WITH_HEADER",
-    "payload": "REPLACE_WITH_PAYLOAD",
-    "signature": "REPLACE_WITH_SIGNATURE"
-  },
-  "miniapp": {
-    "version": "1",
-    "name": "Base Metrics",
-    "homeUrl": "https://basemetrics.vercel.app/",
-    "iconUrl": "https://basemetrics.vercel.app/icon.png"
-  },
+  "accountAssociation": { ... },
+  "miniapp": { ... },
   "baseBuilder": {
     "ownerAddress": "0x603E8F80872E35e7ACBeE879aa79a5b51073AC75"
   }
