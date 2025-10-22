@@ -1,8 +1,8 @@
 {
   "accountAssociation": {
-    "header": "eyJmaWQiOjM2ODA3OCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGM2MDQ5Qzk1ZmEwQzQ2ZDViMGU3YjE3MWMzZTQwNmJBQjdCZmQ2ZjcifQ",
-    "payload": "eyJkb21haW4iOiJiYXNlbWV0cmljcy52ZXJjZWwuYXBwIn0",
-    "signature": "7Ol2EkPbtXr1UyVJJuNTj7z0SQITV0eyuwHRXGObWD4SP6/E1ijcPQSwcMmfAsXxtRSUs2CwqSkGwNnGGB1aZRw="
+    "header": "REPLACE_WITH_HEADER",
+    "payload": "REPLACE_WITH_PAYLOAD",
+    "signature": "REPLACE_WITH_SIGNATURE"
   },
   "miniapp": {
     "version": "1",
@@ -11,6 +11,7 @@
     "description": "Analytics dashboard with Base and OP Stack transactions and EVM TVL (Top 10).",
     "homeUrl": "https://basemetrics.vercel.app/",
     "iconUrl": "https://basemetrics.vercel.app/icon.png",
+    "imageUrl": "https://basemetrics.vercel.app/hero.png",
     "splashImageUrl": "https://basemetrics.vercel.app/splash.png",
     "splashBackgroundColor": "#0B0E14",
     "heroImageUrl": "https://basemetrics.vercel.app/hero.png",
