@@ -2,7 +2,7 @@ export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? '';
 
   const og   = `${baseUrl}/api/og`;
-  const open = `https://basemetrics.vercel.app`;  // 🔥 nouvelle URL
+  const open = `https://basemetrics.vercel.app`;
   const post = `${baseUrl}/api/frame-tx`;
 
   const html = `
@@ -18,7 +18,7 @@ export async function GET() {
 
         <meta name='fc:frame:button:1' content='Open Dashboard'/>
         <meta name='fc:frame:button:1:action' content='web'/>
-        <meta name='fc:frame:button:1:target' content='${open}'/>   <!-- 🔥 redirection mise à jour -->
+        <meta name='fc:frame:button:1:target' content='${open}'/>
 
         <meta name='fc:frame:button:2' content='Base Docs'/>
         <meta name='fc:frame:button:2:action' content='web'/>
@@ -29,11 +29,16 @@ export async function GET() {
 
         <meta name='fc:frame:post_url' content='${post}'/>
       </head>
-      <body></body>
+      <body style="margin:0;padding:0;">
+        <iframe
+          src="https://basemetrics.vercel.app"
+          style="border:0; width:100vw; height:100vh; display:block;"
+        ></iframe>
+      </body>
     </html>
   `;
 
   return new Response(html, {
-    headers: { "content-type": "text/html" }
+    headers: { 'content-type': 'text/html' },
   });
 }
